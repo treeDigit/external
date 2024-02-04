@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
+//test
 
 class Error extends Component {
     render() {
+        console.log(process.env.MY_VAR)
         return (
             <>
                 <section className="error-area">
@@ -12,7 +14,7 @@ class Error extends Component {
                                 <div className="error-content">
                                     <img src="/images/404.png" alt="error" />
                 
-                                    <h3>Page Not Found</h3>
+                                    <h3>NOT FOUND</h3>
                                     <p>The page you are looking for might have been removed had its name changed or is temporarily unavailable.</p>
 
                                     <Link href="/">
